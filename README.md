@@ -46,17 +46,27 @@ We simulated the exact cohort design described in **Table 1** of the article, wh
 - **Algorithm:** Linear Discriminant Analysis (LDA).
 - **Outcome:** The model successfully reproduced the high diagnostic power, confirming the study's methodology is sound.
 
+![Replication Results](results/01_replication_results.png)
+
+
 ### Phase 2: Verification (External Validation)
 We tested the *exact mathematical formula* provided on page 328 of the article directly on the raw dataset.
 - **Normalization:** Performed using internal controls (`miR-149-3p`, `miR-2861`, `miR-4463`).
 - **Formula:** `Index = (0.25*miR1246) + (0.49*miR1307) ... - 13.94`
 - **Outcome:** Even without re-training, the formula achieved an **AUC of 0.947**, proving that the 5 selected miRNAs are indeed powerful universal biomarkers.
 
+
+![Verification Results](results/02_verification_results.png)
+
+
 ### Phase 3: Innovation (AI-Driven Discovery)
 Instead of limiting ourselves to the paper's 5 genes, we performed a **data-driven full-genome scan** on 2540 miRNAs.
 - **Feature Selection:** Used **Random Forest** to capture non-linear relationships.
 - **Classification:** Used **XGBoost** (Gradient Boosting).
 - **Discovery:** The AI identified a new set of top biomarkers (including `MIMAT0004508`, `MIMAT0005951`) that outperformed the original panel in overall accuracy.
+
+
+![Innovation Results](results/03_innovation_results.png)
 
 ---
 
