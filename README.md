@@ -98,4 +98,4 @@ Run the notebooks in order:
 ---
 
 ### 📝 Author
-Replication and Analysis by **[Ali Hashemian]**.
+Replication and Analysis by **Ali Hashemian**.
